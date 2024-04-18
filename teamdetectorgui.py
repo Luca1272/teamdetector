@@ -62,7 +62,7 @@ def getPlayers(url):
 
     print(players)
 
-    with open(r'players.txt', 'w') as fp:
+    with open(r'players.txt', 'w', encoding='utf-8') as fp:
         for item in players:
             fp.write("%s\n" % item)
 
